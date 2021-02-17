@@ -18,8 +18,10 @@ body {
 /** Base classes **/
 
 .center {
-  max-width: 1140px;
+  max-width: 1230px;
+  min-width: 250px;
   margin: auto;
+  padding: 0 50px;
 }
 
 .button {
@@ -235,6 +237,35 @@ header {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (max-width: 1070px) {
+  .aboutUs {
+    flex-direction: column-reverse;
+  }
+
+  .aboutUsL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .aboutUsL .button {
+    margin-top: 0px;
+  }
+
+  .aboutUsR {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutUsR img {
+    width: 250px;
+    height: auto;
+  }
+}
+
 /** Services **/
 
 .services {
@@ -271,4 +302,222 @@ header {
   margin-top: 10px;
   font-size: 1.3rem;
   color: dimgray;
+}
+
+@media only screen and (max-width: 790px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 70%;
+    padding: 20px 0;
+    border-left: 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .service:last-child {
+    border: 0;
+  }
+}
+
+/** Projects **/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  border-radius: 30px;
+  padding: 0 15px;
+}
+
+.filters li {
+  display: inline-block;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-right: 1px solid #ccc;
+  color: #555;
+  border-bottom: 4px solid #efefef;
+}
+
+.filters li:last-child {
+  border-right: 0;
+}
+
+.filters li:first-child {
+  border-bottom-left-radius: 2px;
+}
+
+.filters li:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+.filters li:hover {
+  color: #222;
+  border-bottom: 4px solid rgba(178, 135, 86, 0.5);
+}
+
+.filters li.active {
+  color: #111;
+  border-bottom: 4px solid #b28756;
+}
+
+.photos {
+  margin-top: 30px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  width: 280px;
+}
+
+.photoArea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.photoArea img {
+  width: inherit;
+  height: inherit;
+}
+
+.photoArea:hover .photoInfo {
+  display: flex;
+}
+
+.photoInfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: inherit;
+  height: inherit;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.photoInfo h5 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.photoInfo p {
+  font-size: 1.3rem !important;
+}
+
+/** Our Team **/
+
+.bgTeam {
+  background-image: url('../images/citybg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.teamArea {
+  overflow: hidden;
+  width: 100vw;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 15px;
+  height: 350px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eee;
+  margin: 0 15px;
+}
+
+.card .photo {
+  height: 150px;
+  width: 150px;
+}
+
+.card .info {
+  color: #121212;
+  text-align: center;
+}
+
+.card .info h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.card .info p {
+  font-size: 1.3rem;
+}
+
+.card .socialMedia {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  background-color: #aaaaaa;
+  border-radius: 50%;
+}
+
+.card .socialMedia a:hover {
+  background-color: #b28756;
+}
+
+.card .socialMedia img {
+  height: 12px;
+}
+
+.teamArea .slidersPointers {
+  margin-top: 30px;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamArea .pointer {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #b28756;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.teamArea .pointer.active {
+  background-color: #b28756;
+  cursor: initial;
 }

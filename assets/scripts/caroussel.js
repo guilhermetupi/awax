@@ -12,7 +12,7 @@ let slides = [
 pointers.forEach((pointer, index) => {
   pointer.onclick = () => {
     let deactivatedPointers = pointers.filter(
-      (notPointer) => notPointer != pointer
+      (notPointer) => notPointer !== pointer
     );
     deactivatedPointers.forEach((deactivatedPointer) => {
       if (deactivatedPointer.classList.contains('active')) {
