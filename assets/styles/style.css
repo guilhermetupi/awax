@@ -15,6 +15,12 @@ body {
   overflow-x: hidden;
 }
 
+input,
+textarea {
+  outline: none !important;
+  resize: vertical;
+}
+
 /** Base classes **/
 
 .center {
@@ -761,4 +767,151 @@ header {
   height: 1px;
   width: 10px;
   background-color: #888;
+}
+
+/** Facts **/
+
+.facts {
+  display: flex;
+}
+
+.fact {
+  flex: 1;
+  margin: 0 10px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.fact h1 {
+  font-size: 4.5rem;
+  color: #b28756;
+}
+
+.fact h2 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fact p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.fact .divider {
+  width: 20px;
+  height: 3px;
+  background-color: #888;
+  margin: 7px auto;
+}
+
+/** Contacts **/
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+  color: #aaa;
+}
+
+.contacts h5 {
+  font-size: 1.5rem;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.share img {
+  margin-right: 20px;
+}
+
+.medias {
+  display: flex;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.mediaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.twitter {
+  background-color: #39c5eb;
+}
+
+.linkedin {
+  background-color: #127db7;
+}
+
+.facebook {
+  background-color: #39659a;
+}
+
+.gplus {
+  background-color: #e44643;
+}
+
+.pinterest {
+  background-color: #b91a27;
+}
+
+/** Contact **/
+
+.contact {
+  background-color: #f7f7f7 !important;
+  border-top: 1px solid #ddd;
+}
+
+.contact form {
+  padding: 0 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+form .column {
+  padding: 0 15px;
+  flex: 1;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #b4b4b4;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+form textarea {
+  padding-top: 10px;
+  min-height: 100px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 1.5rem;
 }
