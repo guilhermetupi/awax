@@ -592,3 +592,173 @@ header {
 .companies img {
   max-height: 100px;
 }
+
+/** Prices **/
+
+.default.light.prices {
+  background-color: #ededed;
+}
+
+.priceCards {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 250px;
+  padding: 30px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.priceCard h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.price h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.price h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #b9b9b9;
+}
+
+.particulars p {
+  font-size: 0.8rem;
+}
+
+.particulars div {
+  margin: 5px auto;
+  width: 15px;
+  height: 1px;
+  background-color: black;
+}
+
+.priceCard a {
+  margin-top: 0;
+  background-color: #373737;
+  font-size: 1.8rem;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.priceCard a:hover {
+  background-color: #272727;
+}
+
+.priceCard a.gold {
+  background-color: #b28756;
+}
+
+.priceCard a.gold:hover {
+  background-color: #967148;
+}
+
+/** Premium features **/
+
+.premiumFeatures .divider {
+  height: 2px;
+  width: 100%;
+  background-color: #e4e4e4;
+  margin: 40px 0;
+}
+
+.premiumFeatures > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.premiumFeatures div:last-child a {
+  margin: inherit auto;
+}
+
+.premium {
+  height: 341px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.package {
+  flex: 3;
+}
+
+.package img {
+  margin: auto;
+}
+
+.features {
+  flex: 4;
+  padding: 0 20px;
+  height: 341px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature img {
+  height: 24px;
+  width: 24px;
+  margin-top: 5px;
+}
+
+.feature .check {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.feature .description {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #888;
+}
+
+.feature .description h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #121212;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.feature .description p {
+  line-height: 2.5rem;
+}
+
+.feature .description li {
+  display: flex;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 7px 0;
+}
+
+.feature .description .listStyle {
+  margin: auto 2px;
+  margin-right: 10px;
+  height: 1px;
+  width: 10px;
+  background-color: #888;
+}
