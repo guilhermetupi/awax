@@ -36,6 +36,28 @@ body {
   text-transform: uppercase;
 }
 
+.slidersPointers {
+  margin-top: 30px;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #b28756;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pointer.active {
+  background-color: #b28756;
+  cursor: initial;
+}
+
 /** Header **/
 
 header {
@@ -171,7 +193,7 @@ header {
 }
 
 .default.light {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 
 .default.dark {
@@ -499,25 +521,74 @@ header {
   height: 12px;
 }
 
-.teamArea .slidersPointers {
-  margin-top: 30px;
-  width: 100%;
-  height: 20px;
+/** Review de clientes **/
+
+.default.light.clients {
+  background-color: #f7f7f7;
+}
+
+.clientReview {
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  max-width: 900px;
+  margin: auto;
 }
 
-.teamArea .pointer {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: 3px solid #b28756;
-  margin: 0 5px;
-  cursor: pointer;
+.client,
+.review {
+  text-align: center;
 }
 
-.teamArea .pointer.active {
-  background-color: #b28756;
-  cursor: initial;
+.client {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.client img {
+  height: 150px;
+  width: 150px;
+}
+
+.client h4 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.client h5 {
+  margin-top: -15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.review {
+  flex: 1;
+}
+
+.review img {
+  margin-bottom: 10px;
+}
+
+.review p {
+  text-align: center;
+}
+
+/** Companies **/
+
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.companies img {
+  max-height: 100px;
 }
